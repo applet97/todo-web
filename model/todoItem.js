@@ -1,3 +1,5 @@
+
+
 function todoItem(arg) {
   this.content = arg;
   this.pending = true;
@@ -17,9 +19,11 @@ todoItem.prototype.finish = function() {
 }
 
 todoItem.prototype.remove = function() {
+
   if (this.container.list.indexOf(this) != -1) {
     this.container.list.splice(this.container.list.indexOf(this), 1);
   }
+  this.container.saveToLS();
 }
 
 todoItem.prototype.setDomNode = function(domNode) {
