@@ -28,7 +28,7 @@ function todoDomItem(item) {
   delButton.innerHTML = "X";
 
   delButton.addEventListener('click', getDeleteBtnListner(item));
-
+  
   domItem.appendChild(delButton);
 
   return domItem;
@@ -55,7 +55,7 @@ function finishedDomItem(item) {
   delButton.innerHTML = "X";
 
   delButton.addEventListener('click', getDeleteBtnListner(item));
-
+  
   domItem.appendChild(delButton);
 
   return domItem;
